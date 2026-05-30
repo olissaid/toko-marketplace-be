@@ -67,7 +67,6 @@ class StockController extends Controller
 
     /**
      * Fitur 7.2 - Tambah Stok / Restock Manual (Admin & Staff)
-     * Endpoint: POST /api/produk/{id}/stok/masuk
      */
     public function storeMasuk(Request $request, $id)
     {
