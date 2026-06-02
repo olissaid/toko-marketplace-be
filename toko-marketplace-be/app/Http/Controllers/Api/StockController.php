@@ -34,7 +34,6 @@ class StockController extends Controller
             ->latest()
             ->paginate($perPage);
 
-        // Format data agar sesuai snake_case kesepakatan contract teman FE
         $formattedRiwayat = collect($movements->items())->map(function($move) {
             return [
                 'id' => $move->id,
